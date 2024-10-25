@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saber se letra existe</title>
+</head>
+<body>
+    
+    <script>
+
+        var string = prompt("Digite a String");
+
+        if(string.includes("a") || string.includes("A")){
+            var count = 0;
+
+            for (let index = 0; index < string.length; index++) {
+                const element = string[index];
+                if (element == "A" || element == "a") {
+                    count++;
+                }
+                
+            }
+            document.write("A letra A aparece " + count + " vezes");
+
+        }
+        else{
+            document.write("Não tem letra A");
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>  
+
